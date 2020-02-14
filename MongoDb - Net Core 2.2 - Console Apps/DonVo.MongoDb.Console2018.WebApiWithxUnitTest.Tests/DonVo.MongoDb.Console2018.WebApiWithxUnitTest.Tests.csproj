@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="Mongo2Go" Version="2.2.8" />
+    <PackageReference Include="Moq" Version="4.10.1" />
+    <PackageReference Include="RestEase" Version="1.4.10" />
+    <PackageReference Include="Shouldly" Version="3.0.2" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DonVo.MongoDb.Console2018.WebApiWithxUnitTest.Library\DonVo.MongoDb.Console2018.WebApiWithxUnitTest.Library.csproj" />
+    <ProjectReference Include="..\DonVo.MongoDb.Console2018.WebApiWithxUnitTest\DonVo.MongoDb.Console2018.WebApiWithxUnitTest.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="IntegrationTests\" />
+  </ItemGroup>
+
+</Project>
